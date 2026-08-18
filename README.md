@@ -1,0 +1,1 @@
+# QA---Testes-Funcionais-e-An-lise-de-Classes-de-Equival-ncia
