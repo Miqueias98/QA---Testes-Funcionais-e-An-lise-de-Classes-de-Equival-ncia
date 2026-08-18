@@ -2,28 +2,31 @@
 
 ## 📋 Sobre o projeto
 
-Este repositório apresenta a documentação e a execução de testes funcionais realizados em um formulário de cadastro, com foco na validação dos campos e das regras de negócio relacionadas às entradas fornecidas pelo usuário.
+Este projeto foi desenvolvido com o objetivo de colocar em prática alguns conceitos de **Quality Assurance (QA)** e testes de software.
 
-A documentação foi organizada para demonstrar o processo de planejamento, criação e execução dos casos de teste.
+Durante o projeto, realizei o planejamento e a execução de testes funcionais em um formulário de cadastro, analisando diferentes tipos de entradas e verificando se o sistema se comportava conforme o esperado.
+
+A documentação foi criada para organizar os cenários de teste, os dados utilizados e os resultados obtidos durante a execução.
 
 ---
 
 # 🎯 Objetivo
 
-O objetivo principal deste projeto é validar se os campos do formulário se comportam de acordo com as regras estabelecidas, garantindo que:
+O principal objetivo deste projeto foi validar o comportamento dos campos do formulário e verificar se as regras definidas estavam sendo respeitadas.
 
-* Entradas válidas sejam aceitas corretamente;
-* Entradas inválidas sejam rejeitadas;
-* Os limites mínimos e máximos sejam respeitados;
-* Caracteres não permitidos sejam identificados;
-* Mensagens de erro sejam apresentadas quando necessário;
-* O comportamento da aplicação esteja de acordo com o resultado esperado.
+Durante os testes, foram analisados pontos como:
+
+* Aceitação de dados válidos;
+* Rejeição de dados inválidos;
+* Limites mínimos e máximos dos campos;
+* Validação de caracteres permitidos e não permitidos;
+* Exibição de mensagens de erro quando necessário.
 
 ---
 
 # 🧠 Técnicas de teste utilizadas
 
-Neste projeto foram utilizadas as seguintes técnicas:
+Para a realização dos testes, utilizei as seguintes técnicas:
 
 * **Teste Caixa-Preta**
 * **Particionamento por Classes de Equivalência**
@@ -35,7 +38,7 @@ Neste projeto foram utilizadas as seguintes técnicas:
 
 # 🧪 Casos de teste executados
 
-Durante a execução dos testes, foram obtidos os seguintes resultados:
+Ao todo, foram realizados **14 testes** durante o projeto.
 
 | Métrica           | Quantidade |
 | ----------------- | ---------: |
@@ -43,7 +46,7 @@ Durante a execução dos testes, foram obtidos os seguintes resultados:
 | Testes aprovados  |     **14** |
 | Bugs encontrados  |      **0** |
 
-> **Resultado:** todos os 14 testes executados foram aprovados e nenhum bug foi identificado ou registrado durante os cenários documentados.
+Todos os testes documentados foram executados e aprovados. Durante a realização desses cenários, **não foram encontrados bugs**.
 
 ---
 
@@ -66,63 +69,59 @@ Durante a execução dos testes, foram obtidos os seguintes resultados:
    ┗ 📌 T-14
 ```
 
-A documentação está organizada em duas áreas principais:
+A documentação do projeto foi dividida em duas partes principais:
 
 ### 📘 Classes de equivalência
 
-Contém o planejamento dos testes, incluindo:
+Nesta parte, organizei os possíveis tipos de entrada para os campos analisados, separando os dados em classes válidas e inválidas.
 
-* Classes válidas;
-* Classes inválidas;
-* Limites aceitos;
-* Valores fora dos limites;
-* Dados de teste;
-* Cenários relacionados aos campos analisados.
+Também foram considerados os limites de cada campo para ajudar na criação dos cenários de teste.
 
 ### 📗 Casos de teste
 
-Contém os cenários executados, apresentando informações como:
+Nesta seção estão os testes que foram executados durante o projeto.
 
-* ID do caso de teste;
-* Nome do cenário;
+Cada caso de teste contém informações como:
+
+* ID do teste;
+* Cenário testado;
 * Pré-condições;
-* Etapas de execução;
+* Passos para execução;
 * Resultado esperado;
-* Status final.
+* Status do teste.
 
 ---
 
 # 🛠️ Ferramentas utilizadas
 
-* **Microsoft Excel** — Documentação e organização dos casos de teste;
-* **Testes Manuais** — Execução dos cenários;
-* **Técnicas de Teste Caixa-Preta** — Definição das estratégias de validação.
+* **Microsoft Excel** — Utilizado para organizar a documentação e os casos de teste;
+* **Testes Manuais** — Utilizados para executar e validar os cenários;
+* **Técnicas de Teste Caixa-Preta** — Utilizadas como base para a criação dos testes.
 
 ---
 
 # 📚 Conceitos aplicados
 
-Durante o desenvolvimento deste projeto foram aplicados conceitos fundamentais de Quality Assurance, incluindo:
+Durante o desenvolvimento deste projeto, pude praticar alguns conceitos importantes da área de Quality Assurance, como:
 
 * Testes funcionais;
 * Testes manuais;
 * Teste Caixa-Preta;
 * Classes de Equivalência;
 * Análise de Valores-Limite;
-* Cenários positivos;
-* Cenários negativos;
-* Resultado esperado;
-* Registro do status de execução.
+* Cenários positivos e negativos;
+* Definição de resultados esperados;
+* Registro dos resultados dos testes.
 
 ---
 
 # 📌 Conclusão
 
-Este projeto demonstra a aplicação prática de técnicas fundamentais de **Quality Assurance** para a criação e execução de testes funcionais.
+Este projeto foi desenvolvido como uma forma de praticar conceitos de **Quality Assurance** e entender melhor como funciona o processo de criação, documentação e execução de testes.
 
-Foram realizados **14 testes**, sendo **14 aprovados** e **0 bugs encontrados** durante a execução dos cenários documentados.
+Ao todo, foram realizados **14 testes**, e todos foram aprovados. Durante a execução dos cenários documentados, **nenhum bug foi encontrado**.
 
-A documentação apresenta uma estrutura organizada para o planejamento e execução dos testes, utilizando técnicas como **Particionamento por Classes de Equivalência** e **Análise de Valores-Limite** para validar o comportamento da aplicação.
+Com esse projeto, pude aplicar na prática técnicas como **Particionamento por Classes de Equivalência** e **Análise de Valores-Limite**, além de trabalhar com a criação e organização de casos de teste.
 
 ---
 
@@ -130,4 +129,4 @@ A documentação apresenta uma estrutura organizada para o planejamento e execu�
 
 **Miqueias Ferreira**
 
-Projeto desenvolvido para prática e aplicação de conceitos de **Quality Assurance (QA)**, **Testes Funcionais** e **Teste Caixa-Preta**.
+Projeto desenvolvido para prática e aprendizado na área de **Quality Assurance (QA)** e **Testes de Software**.
