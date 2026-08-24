@@ -1,132 +1,151 @@
-# 🧪 QA - Testes Funcionais e Análise de Classes de Equivalência
+# 🧪 Testes de Aplicação Web — Reserva e Pagamento
 
-## 📋 Sobre o projeto
+## 📌 Sobre o projeto
 
-Este projeto foi desenvolvido com o objetivo de colocar em prática alguns conceitos de **Quality Assurance (QA)** e testes de software.
+Este projeto foi desenvolvido com o objetivo de realizar testes em uma aplicação web de reservas, verificando se os principais recursos funcionam conforme o esperado.
 
-Durante o projeto, realizei o planejamento e a execução de testes funcionais em um formulário de cadastro, analisando diferentes tipos de entradas e verificando se o sistema se comportava conforme o esperado.
+Durante os testes, foram avaliados pontos como layout da aplicação, preenchimento de campos, fluxo de reserva, método de pagamento, cadastro de cartão, botão de reservar e cancelamento de uma reserva.
 
-A documentação foi criada para organizar os cenários de teste, os dados utilizados e os resultados obtidos durante a execução.
-
----
-
-# 🎯 Objetivo
-
-O principal objetivo deste projeto foi validar o comportamento dos campos do formulário e verificar se as regras definidas estavam sendo respeitadas.
-
-Durante os testes, foram analisados pontos como:
-
-* Aceitação de dados válidos;
-* Rejeição de dados inválidos;
-* Limites mínimos e máximos dos campos;
-* Validação de caracteres permitidos e não permitidos;
-* Exibição de mensagens de erro quando necessário.
+A ideia foi colocar em prática conceitos de **Quality Assurance (QA)**, identificando comportamentos que estavam de acordo com o esperado e também possíveis problemas na aplicação.
 
 ---
 
-# 🧠 Técnicas de teste utilizadas
+## 🎯 Objetivo
 
-Para a realização dos testes, utilizei as seguintes técnicas:
+Validar o funcionamento dos principais recursos da aplicação e identificar possíveis falhas durante a execução dos testes.
 
-* **Teste Caixa-Preta**
-* **Particionamento por Classes de Equivalência**
-* **Análise de Valores-Limite**
-* **Testes Funcionais**
-* **Testes Manuais**
+Os testes foram realizados considerando diferentes cenários, incluindo preenchimento correto e incorreto dos campos, validações, limites de caracteres, fluxos de sucesso e situações em que o sistema deveria impedir a continuidade da ação.
 
 ---
 
-# 🧪 Casos de teste executados
+## 🧪 Técnicas de teste utilizadas
 
-Ao todo, foram realizados **14 testes** durante o projeto.
-
-| Métrica           | Quantidade |
-| ----------------- | ---------: |
-| Testes realizados |     **14** |
-| Testes aprovados  |     **14** |
-| Bugs encontrados  |      **0** |
-
-Todos os testes documentados foram executados e aprovados. Durante a realização desses cenários, **não foram encontrados bugs**.
+* Teste funcional
+* Teste exploratório
+* Teste de validação de campos
+* Teste de cenários positivos e negativos
+* Teste de interface e layout
 
 ---
 
-# 📁 Estrutura da documentação
+## 📊 Casos de testes executados
+
+Ao todo, foram executados **159 testes** durante o projeto.
+
+| Resultado           | Quantidade |
+| ------------------- | ---------: |
+| ✅ Aprovados         |        129 |
+| ❌ Reprovados        |         30 |
+| 🐞 Bugs encontrados |         30 |
+
+Os testes reprovados foram analisados e os problemas encontrados foram registrados para facilitar o acompanhamento e a correção das falhas.
+
+---
+
+## 🔎 Cenários testados
+
+### Layout da aplicação
+
+Foram realizadas validações relacionadas à interface da aplicação, incluindo:
+
+* Organização dos elementos;
+* Campos de origem e destino;
+* Mapa e seus controles;
+* Informações dos veículos;
+* Botões e componentes da tela;
+* Informações apresentadas durante uma reserva.
+
+### Método de pagamento
+
+Foram testados os principais comportamentos relacionados ao pagamento:
+
+* Abertura da janela de método de pagamento;
+* Cadastro de cartão;
+* Validação dos campos;
+* Limites de caracteres;
+* Preenchimento válido e inválido;
+* Botão de adicionar;
+* Botão de cancelar;
+* Adição de mais de um cartão.
+
+### Botão "Reservar"
+
+Foram realizados testes para verificar o comportamento do botão de reserva em diferentes situações, como:
+
+* Todos os campos preenchidos;
+* Carteira de motorista não cadastrada;
+* Método de pagamento não informado;
+* Campos obrigatórios vazios;
+* Endereços preenchidos ou removidos.
+
+### Reserva e cancelamento
+
+Também foram realizados testes no fluxo de reserva, verificando:
+
+* Criação de uma reserva;
+* Exibição das informações do veículo;
+* Valor e tempo de espera;
+* Exibição das informações da viagem;
+* Funcionamento do botão de cancelamento.
+
+---
+
+## 🐞 Bugs encontrados
+
+Durante a execução dos testes foram identificados **30 bugs**, que foram registrados para acompanhamento.
+
+Os problemas encontrados envolveram principalmente:
+
+* Validação de campos;
+* Comportamento de componentes da interface;
+* Exibição de informações;
+* Fluxo de reserva;
+* Método de pagamento;
+* Cancelamento de reserva.
+
+Os bugs foram registrados no **Jira**, permitindo acompanhar cada problema individualmente.
+
+---
+
+## 🛠️ Ferramentas utilizadas
+
+* **Planilhas Excel** — criação dos checklists e registro dos resultados;
+* **Jira** — registro e acompanhamento dos bugs;
+* **Google Chrome** — execução dos testes;
+* **Mozilla Firefox** — execução dos testes.
+
+---
+
+## 📁 Estrutura do projeto
+
+A planilha utilizada para organização dos testes foi dividida em quatro partes:
 
 ```text
-📦 projeto-qa
- ┣ 📄 Projeto documentação de teste.xlsx
- ┃
- ┣ 📂 Classes de equivalência
- ┃ ┣ 📌 Nome
- ┃ ┣ 📌 Sobrenome
- ┃ ┗ 📌 Data de nascimento
- ┃
- ┗ 📂 Casos de teste
-   ┣ 📌 T-1
-   ┣ 📌 T-2
-   ┣ 📌 T-3
-   ┣ 📌 ...
-   ┗ 📌 T-14
+📂 Projeto - Teste de Aplicativo Web
+│
+├── 1. Checklist do layout
+├── 2. Checklist - Método de pagamento
+├── 3. Casos de teste - Botão Reservar
+└── 4. Casos de teste - Reserva
 ```
 
-A documentação do projeto foi dividida em duas partes principais:
-
-### 📘 Classes de equivalência
-
-Nesta parte, organizei os possíveis tipos de entrada para os campos analisados, separando os dados em classes válidas e inválidas.
-
-Também foram considerados os limites de cada campo para ajudar na criação dos cenários de teste.
-
-### 📗 Casos de teste
-
-Nesta seção estão os testes que foram executados durante o projeto.
-
-Cada caso de teste contém informações como:
-
-* ID do teste;
-* Cenário testado;
-* Pré-condições;
-* Passos para execução;
-* Resultado esperado;
-* Status do teste.
+Cada parte possui seus respectivos cenários, resultados esperados, status dos testes e, quando necessário, o link para o bug encontrado.
 
 ---
 
-# 🛠️ Ferramentas utilizadas
+## 💡 Conclusão
 
-* **Microsoft Excel** — Utilizado para organizar a documentação e os casos de teste;
-* **Testes Manuais** — Utilizados para executar e validar os cenários;
-* **Técnicas de Teste Caixa-Preta** — Utilizadas como base para a criação dos testes.
+A execução dos testes permitiu validar diferentes partes da aplicação e encontrar problemas que poderiam afetar a experiência do usuário.
 
----
+No total, foram **159 testes executados**, sendo **129 aprovados e 30 reprovados**, com 30** bugs identificados e registrados**.
 
-# 📚 Conceitos aplicados
-
-Durante o desenvolvimento deste projeto, pude praticar alguns conceitos importantes da área de Quality Assurance, como:
-
-* Testes funcionais;
-* Testes manuais;
-* Teste Caixa-Preta;
-* Classes de Equivalência;
-* Análise de Valores-Limite;
-* Cenários positivos e negativos;
-* Definição de resultados esperados;
-* Registro dos resultados dos testes.
+Esse projeto foi uma oportunidade para praticar a criação de casos de teste, execução de cenários positivos e negativos, identificação de bugs e organização dos resultados de uma forma mais próxima de um projeto real de QA.
 
 ---
 
-# 📌 Conclusão
-
-Este projeto foi desenvolvido como uma forma de praticar conceitos de **Quality Assurance** e entender melhor como funciona o processo de criação, documentação e execução de testes.
-
-Ao todo, foram realizados **14 testes**, e todos foram aprovados. Durante a execução dos cenários documentados, **nenhum bug foi encontrado**.
-
-Com esse projeto, pude aplicar na prática técnicas como **Particionamento por Classes de Equivalência** e **Análise de Valores-Limite**, além de trabalhar com a criação e organização de casos de teste.
-
----
-
-## 👨‍💻 Autor
+### 👨‍💻 Autor
 
 **Miqueias Ferreira**
 
-Projeto desenvolvido para prática e aprendizado na área de **Quality Assurance (QA)** e **Testes de Software**.
+Projeto desenvolvido para prática e demonstração de conhecimentos em **Quality Assurance (QA) e testes de software**.
+
